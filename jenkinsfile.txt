@@ -1,11 +1,11 @@
-// Creating and Executing 1_config.groovy file
-
-1. Create a file 1_config.config.groovy with content.
-
-2. Navigate to Jenkins home directory (C:\ProgramData\Jenkins) using cmd administrator mode using "cd C:\ProgramData\Jenkins" 
-
-3. create a new directory using "mkdir init.groovy.d"
-
-4. copy and paste the 1_config.groovy file to init.groovy.d folder.
-
-5. Try restart your jenkins and you cna find remember me chack box will miss at your jenkins login page and One message from 1_config.groovy will display at your jenkins home page.
+node('DOTNET'){
+  stage('Build'){
+    echo 'Building.....'
+  }
+  stage('Test'){
+    echo 'Testing.....'
+  }
+  stage('Deploy'){
+    echo 'Deploying.....'
+  } 
+}
